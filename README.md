@@ -73,7 +73,7 @@ The implemented functions are listed as follows.
 Copy `doiatpatch.bat`, `iatpatcher.exe`, and `nonxp.dll` to the home directory of PHP and then execute `doiatpatch.bat`.
 
 ### Original page
-The patched php files can be download in the original page: <http://www.lindasc.com/php/>.
+The original page is at <http://www.lindasc.com/php/>, and the patched php files can be download in the original page.
 
 ### Bugs
 The CLI of PHP 7 occurs BUG for unknown reasons; however, its CGI is workable with no BUG.
