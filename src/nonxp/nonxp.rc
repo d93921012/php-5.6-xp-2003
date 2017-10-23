@@ -1,0 +1,49 @@
+#define FILEVER                         0,0,4,40
+#define FILEVERSTR                      "0.0.4.40\0"
+#define PRODUCTVER                      FILEVER
+#define PRODUCTVERSTR                   FILEVERSTR
+
+#include "afxres.h"
+#include "shresdef.h"
+
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION FILEVER
+ PRODUCTVERSION PRODUCTVER
+ FILEFLAGSMASK 0x3fL
+ FILEFLAGS 0x8L
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "Vista+ APIs for XP/2003\0"
+            VALUE "CompanyName", "ZX Inc.\0"
+            VALUE "FileDescription", "Vista+ APIs for XP/2003\0"
+            VALUE "FileVersion", FILEVERSTR
+            VALUE "InternalName", "nonxp\0"
+            VALUE "LegalCopyright", "Free Software\0"
+            VALUE "OriginalFilename", "nonxp.dll\0"
+            VALUE "PrivateBuild", "Made by Linda\0"
+            VALUE "ProductName", "nonxp\0"
+            VALUE "ProductVersion", PRODUCTVERSTR
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+STRINGTABLE
+{
+	IDS_PERSONAL                "My Documents"
+	IDS_MYMUSIC                 "My Music"
+	IDS_MYVIDEOS                "My Videos"
+	IDS_DESKTOPDIRECTORY        "#msgctxt#directory#Desktop"
+	IDS_MYPICTURES              "My Pictures"
+}

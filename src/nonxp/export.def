@@ -1,0 +1,30 @@
+LIBRARY nonxp
+EXPORTS
+Stub0
+Stub1
+Stub2
+Stub3
+Stub4
+Stub5
+Stub6
+Stub7
+Stub8
+Stub9
+GetFinalPathNameByHandleA
+GetFinalPathNameByHandleW
+GetTickCount64
+InitializeConditionVariable	=RtlInitializeConditionVariable
+InitializeCriticalSectionEx
+RtlInitializeConditionVariable
+RtlInitializeCriticalSectionEx
+RtlSleepConditionVariableCS
+RtlWakeAllConditionVariable
+RtlWakeConditionVariable
+SHGetKnownFolderPath
+SleepConditionVariableCS
+WSASendMsg
+WakeAllConditionVariable	=RtlWakeAllConditionVariable
+WakeConditionVariable		=RtlWakeConditionVariable
+if_nametoindex
+inet_ntop
+inet_pton
