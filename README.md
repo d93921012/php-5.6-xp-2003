@@ -1,5 +1,7 @@
 # Run PHP 5.6+ on Windows XP and 2003
 
+Since PHP 5.5, support for Windows XP and 2003 has been dropped offically. However, it is possible to run PHP 5.6 and 7.0 in Windows XP and 2003. An approach is proposed here to let PHP 5.6 and 7.0 can be executed in Windows XP and 2003.
+
 Instead of patching and rebuilding the whole PHP completely, which is a complicated work, this work implements the API functions that are only available after Vista and then patches the import descriptors of the executable files.
 
 The implemented functions are listed as follows.
