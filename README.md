@@ -1,7 +1,5 @@
 # Run PHP 5.6+ on Windows XP and 2003
 
-Since PHP 5.5, support for Windows XP and 2003 has been dropped offically. However, it is possible to run PHP 5.6 and 7.0 in Windows XP and 2003. A simple approach is proposed here to let PHP 5.6 and 7.0 can be executed in Windows XP and 2003.
-
 Instead of patching and rebuilding the whole PHP completely, which is a complicated work, this work implements the API functions that are only available after Vista and then patches the import descriptors of the executable files.
 
 The implemented functions are listed as follows.
@@ -75,7 +73,10 @@ The implemented functions are listed as follows.
 Copy `doiatpatch.bat`, `iatpatcher.exe`, and `nonxp.dll` to the home directory of PHP and then execute `doiatpatch.bat`.
 
 ### Original page
-The original page is at <http://www.lindasc.com/php/>, and the patched php files can be download in the original page.
+The patched php files can be download in the original page: `http://www.lindasc.com/php/`.
 
 ### Bugs
 The CLI of PHP 7 occurs BUG for unknown reasons; however, its CGI is workable with no BUG.
+
+### 使用注意事項
+在使用 composer 安裝 package 時，有可能裝的 package 無法正常執行。例如 nesbot/carbon 中，針對 PHP 5.6 會使用這樣的運算式 1520833979.6569 * 1000000 % 1000000，正常結果應為 656900，但在此版本中，會因溢位得到 -954812 的錯誤結果。
